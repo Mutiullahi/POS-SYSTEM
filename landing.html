@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+</head>
+<body>
+    <div class="mainmenu">
+        <div class="banner">
+            <h1> <span class="input"> </span></h1>
+        </div>
+        <div class="container">
+            <p><a href="./auth.html">User Dashboard &RightArrow;</a></p>
+            <p><a href="./auth_web.html">Website Landing Page &RightArrow;</a></p>
+            <p><a href="./auth_admin.html"> Admin Panel &RightArrow;</a></p>
+        </div>
+        <div class="link">
+            <p>DESIGNED BY <a href="#">CODE AND CREATIVE</a></p>
+        </div>
+    </div>
+</body>
+<style>
+    body{
+        margin: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .mainmenu{
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        background: url("./images/design.jpg");
+        background-size: cover;
+        animation-name: multicolor;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    .container{
+        background: transparent;
+        backdrop-filter: blur(10px);
+        box-shadow: 2px 2px 15px 10px navy;
+        border-radius: 10px;
+        width: 400px;
+        text-align: center;
+    }
+    @keyframes multicolor {
+        100%{
+            filter: hue-rotate(360deg);
+        }
+    }
+    .container  p{
+        font-size: 20px;
+        background-color: red;
+        margin: 3rem 3rem;
+        padding: 10px 0;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 2px;
+        font-weight: 900;
+    }
+    .container p a{
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    .link p{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .link{
+        color: #fff;
+        font-size: 18px;
+    }
+    .link p a{
+        text-decoration: none;
+        font-weight: 900;
+        color: blueviolet;
+    }
+    .banner{
+        color: #fff;
+        text-align: center;
+    }
+</style>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed(".input",{
+    strings:["WELCOME TO P.O.S MANAGEMENT SYSTEM", "DESIGNED BY CODE AND CREATIVE"],
+    typeSpeed:70,
+    backSpeed:65,
+    loop:true
+})
+</script>
+</html>
